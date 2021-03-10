@@ -171,11 +171,13 @@ export class ChildProcess extends EventEmitter {
   }
 
   ref(): void {
-    notImplemented("ChildProcess.ref()");
+    // https://nodejs.org/dist/latest-v14.x/docs/api/child_process.html#child_process_subprocess_ref
+    console.error("not implemented: ChildProcess.ref()");
   }
 
   unref(): void {
-    notImplemented("ChildProcess.unref()");
+    // https://nodejs.org/dist/latest-v14.x/docs/api/child_process.html#child_process_subprocess_unref
+    console.error("not implemented: ChildProcess.unref()");
   }
 
   private async _waitForChildStreamsToClose(): Promise<void> {
