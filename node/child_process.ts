@@ -78,7 +78,7 @@ export class ChildProcess extends EventEmitter {
     }
 
     if (windowsHide) {
-      notImplemented("options.windowsHide");
+      console.error("windowsHide is not implemented, see https://github.com/denoland/deno/pull/7481");
     }
 
     const [
